@@ -23,6 +23,7 @@ endif
 local_cflags_for_rs_cpp += -DRS_VERSION=$(RS_VERSION)
 
 LOCAL_SRC_FILES := $(rs_cpp_SRC_FILES)
+LOCAL_CFLAGS += $(local_cflags_for_rs_cpp) $(call-cc-cpp-option,-Qunused-arguments)
 
 LOCAL_CFLAGS += $(local_cflags_for_rs_cpp)
 

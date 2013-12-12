@@ -30,6 +30,7 @@ LOCAL_C_INCLUDES += frameworks/rs/cpp
 LOCAL_C_INCLUDES += frameworks/rs
 LOCAL_C_INCLUDES += $(intermediates)
 
+LOCAL_CFLAGS := $(call-cc-cpp-option,-Qunused-arguments)
 
 include $(BUILD_EXECUTABLE)
 
